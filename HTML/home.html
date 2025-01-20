@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/Images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../Assets/Images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <link rel="stylesheet" href="../CSS/home.css">
+    <title>Eduvate</title>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <a href="../HTML/home.html"><img src="../Assets/Images/logo/Eduvatelogowithname.png"></a>
+        </div>
+
+        <div class="links">
+            <ul id="menu">
+                <li><a href="">Home</a></li>
+                <li><a href="../HTML/learn.html">Learn</a></li>
+                <li><a href="../HTML/uploadnotes.html">UploadNotes</a></li>
+                <li><a href="../HTML/help.html">Help</a></li>
+                <li><a href="#contact">ContactUs</a></li>
+            </ul>
+        </div>
+
+        <div class="search">
+            <label><i class="fa-solid fa-magnifying-glass"></i></label>
+            <input type="text" id="search-bar" placeholder="Search for anything">
+        </div>
+        
+        
+        <div class="icon">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="register">
+            <a href="../HTML/signin.html" class="signin">SignIn</a>
+            <a href="../HTML/signup.html" class="signup">SignUp</a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="nav2">
+        <ul>
+            <li><a href="#">Web Development</a></li>
+            <li><a href="#">Video Editing</a></li>
+            <li><a href="#">Photoshop</a></li>
+            <li><a href="#">After Effects</a></li>
+            <li><a href="#">Web Designing</a></li>
+            <li><a href="#">Software Development</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Body -->
+    <div class="body">
+        <div class="backimg" id="placeholder">
+            <center>
+            <img src="../Assets/Images/undrawprogramming.png" alt="Programming Illustration">
+            </center>
+        </div>
+
+        <div class="getstartbtn" id="get-started-btn">
+            <a href="../HTML/learn.html">Get Started <i class="arrow fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Product Display -->
+    <div class="notesdisplay">
+        <p class="notesdisplayhead">Start <span>Learning</span></p>
+
+        <div class="prods" id="product-list">
+            <!-- Dynamic product cards will be injected here -->
+        </div>
+
+        <div class="seemore">
+            <a href="#">See More <i class="arrow fa-solid fa-chevron-right"></i></a>
+        </div>
+    </div>
+
+    <!-- Upload Notes -->
+    <div class="uploadnotes">
+        <p>Do you want to upload your own notes?</p>
+        <a href="../HTML/uploadnotes.html">Upload <i class="arrow fa-solid fa-chevron-right"></i></a>
+    </div>
+
+    <!-- Get Certified Section -->
+    <div class="getcertified">
+        <div class="txt">
+            <p class="txt1">Get <span>Certified</span></p>
+            <p class="txt2">Enhance your learning experience with our engaging quizzes! Test your knowledge, and upon <br>
+successful completion, earn a certificate to showcase your skills. Start your journey towards <br>
+excellence today!</p>
+            <a href="../HTML/learn.html">Get Started <i class="arrow fa-solid fa-chevron-right"></i></a>
+        </div>
+
+        <div class="certifiedimg">
+            <img src="../Assets/Images/undrawcertificate.png" alt="Certificate Illustration">
+        </div>
+    </div>
+
+    <div class="contact-us" id="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions or need help? We'd love to hear from you!</p>
+        <form id="contact-form" class="contact-form">
+            <input type="text" name="user_name" id="user_name" placeholder="Your Name" required>
+            <input type="email" name="user_email" id="user_email" placeholder="Your Email" required>
+            <textarea name="message" id="message" placeholder="Your Message" rows="5" class="message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form> 
+    </div>
+
+    <!-- Footer -->
+    <div class="social">
+        <div class="logo">
+            <a href="../HTML/home.html"><img src="../Assets/Images/logo/Eduvatelogowithname.png"></a>
+        </div>
+
+        <div class="social-icon">
+           <a href="#"><i class="fa-brands fa-facebook"></i></a>
+           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+           <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+    </div>
+
+    <div class="endtxt">
+        <p>Thanks for visiting.</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3.11.0/dist/email.min.js"></script>
+    <script src="../JavaScript/home.js"></script>
+    <script src="../JavaScript/serch.js"></script>
+    <script src="https://kit.fontawesome.com/56c242ba0b.js" crossorigin="anonymous"></script>
+</body>
+</html>

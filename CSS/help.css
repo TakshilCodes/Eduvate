@@ -1,0 +1,365 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto; /* Content takes remaining space, footer at bottom */
+    min-height: 100vh; /* Full viewport height */
+  }
+
+.navbar {
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-right: 20px;
+    display: flex;
+    align-content: center;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex: 1;
+    margin: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.links ul a:hover {
+    color: #19A7CE;
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 100;
+    background-color: #f7f9fa;
+    border-radius: 100rem;
+    width: 25em;
+    margin-left: 10%;
+    flex-shrink: 0;
+}
+
+
+.search input {
+    border: none;
+    outline: none;
+    background-color: #f7f9fa;
+    width: 130px;
+    flex: 1;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.icon a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    padding: 0px 10px;
+    transition: 0.3s;
+}
+
+.icon a:hover {
+    color: #19A7CE;
+}
+
+.register {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.register a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #19A7CE;
+    border: 1px solid #19A7CE;
+    padding: 10px;
+    width: 65px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.register a:hover{
+    background-color: #fff;
+    color: #19A7CE;
+}
+
+.menu-toggle i{
+    display: none;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+/* Body Section Styles */
+.body {
+    margin-top: 150px;
+    padding: 20px;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+/* Search Main Section */
+.searchmain {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.searchQNA {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 50px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.searchQNA input {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+}
+
+/* Q&A Topics Section */
+.QNATopic {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px; /* Reduced vertical gap */
+    column-gap: 20px; /* Horizontal gap between columns */
+    justify-items: center;
+    margin-top: 40px;
+}
+
+.topic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.topic img {
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.topic p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.topic:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Main Q&A Section */
+.mainQNA {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 20px; /* Reduced vertical gap */
+    column-gap: 30px; /* Horizontal gap between columns */
+    justify-items: center;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.Question {
+    display: flex;
+    flex-direction: row; /* Ensure items are arranged in a column */
+    gap: 15px;
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 350px;
+}
+
+.Question:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.Question i {
+    font-size: 1.5rem;
+    color: #19A7CE;
+}
+
+.Question p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.mainQNA .Question {
+    display: none; 
+}
+
+.active .Question {
+    display: flex;
+}
+
+/* footer */
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+  }
+  
+  .social a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+  }
+  
+  .social i {
+    margin: 0px 10px;
+    transition: 0.3s;
+  }
+  
+  .social a i:hover {
+    color: #19A7CE;
+  }
+  
+  .endtxt p {
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .body{
+        padding: 0;
+    }
+    .searchQNA {
+        width: 90%;
+    }
+
+    .topic {
+        width: 100%;
+        max-width: 330px;
+    }
+
+    .Question {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .QNATopic,
+    .mainQNA {
+        grid-template-columns: repeat(1, 1fr); /* Single column layout */
+        gap: 30px;
+        padding: 0;
+    }
+}
+
+@media (max-width: 1380px) {
+
+    .navbar{
+        justify-content: space-between;
+        background-color: #fff;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 150px;
+        height: 50vh;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    .register.active {
+        display: flex;
+    }
+
+    .links ul.active{
+        display: flex;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .register{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 300px;
+        padding-top: 20px;
+    }
+
+    .menu-toggle i{
+        display: block;
+    }
+
+    .menu-toggle2 i{
+        display: block;
+    }
+}

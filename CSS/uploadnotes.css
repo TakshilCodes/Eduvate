@@ -1,0 +1,363 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+    box-sizing: border-box;
+}
+
+.navbar {
+    margin: 0px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+
+.logo {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-right: 20px;
+    display: flex;
+    align-content: center;
+}
+
+.logo a{
+    text-decoration: none;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex: 1;
+    margin: 0;
+}
+
+.links ul a {
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+}
+
+.links ul a:hover {
+    color: #19A7CE;
+}
+
+.search {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-size: 1em;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 100;
+    background-color: #f7f9fa;
+    border-radius: 100rem;
+    width: 25em;
+    margin-left: 10%;
+    flex-shrink: 0;
+}
+
+.search input {
+    border: none;
+    outline: none;
+    background-color: #f7f9fa;
+    width: 130px;
+    flex: 1;
+}
+
+.icon{
+    display: flex;
+    align-items: center;
+    margin-left: 30%;
+}
+
+.icon a {
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #000;
+    padding: 0px 10px;
+    transition: 0.3s;
+}
+
+.icon a:hover {
+    color: #19A7CE;
+}
+
+.register {
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.register a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #19A7CE;
+    border: 1px solid #19A7CE;
+    padding: 10px;
+    width: 65px;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+
+.register a:hover{
+    background-color: #fff;
+    color: #19A7CE;
+}
+
+.menu-toggle i{
+    display: none;
+    font-size: 2em;
+    margin-right: 10px;
+}
+
+/* hero */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+.content{
+    border: 1px solid #000;
+    width: 900px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    border-top: none;
+}
+
+.contenthead{
+    color: #fff;
+    background-color: #19A7CE;
+    width: 943px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.maininput{
+    font-size: 1em;
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    margin: 10px 0;
+    font-family: "Poppins", serif;
+}
+
+.inputlabel{
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.uploadpdf{
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 100%;
+    padding: 10px;
+    gap: 20px;
+}
+
+#upload-button {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+  }
+  #upload-button:hover {
+    background-color: #0056b3;
+  }
+  #pdf-preview {
+    width: 300px;
+    display: none; /* Hide the canvas initially */
+    margin-top: 20px;
+  }
+
+  .content p{
+    padding: 0;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  /* Dropdown Styles */
+  .dropdown {
+    position: relative;
+  }
+  
+  .dropdown-button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid #000;
+    text-align: left;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .dropdown-button:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 4px;
+    list-style: none;
+    padding: 0;
+    z-index: 1000;
+  }
+  
+  .dropdown-item {
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f0f0;
+  } 
+
+  .submitform{
+    padding: 10px;
+    font-size: 1.2em;
+    border: none;
+    color: #fff;
+    background-color: #19A7CE;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .submitform:hover{
+    background-color: #1d9ec2;
+  }
+
+  .social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+.social a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+}
+
+.social i{
+    margin: 0px 10px;
+    transition: 0.3s;
+}
+
+.social a i:hover{
+    color: #19A7CE;
+}
+
+
+.endtxt p{
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 10px;
+}
+
+@media (max-width: 1380px) {
+
+    .navbar{
+        justify-content: space-between;
+        background-color: #fff;
+    }
+
+    .links ul {
+        display: none;
+        flex-direction: column;
+        background-color: #fff;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        width: 150px;
+        height: 50vh;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    .register.active {
+        display: flex;
+    }
+
+    .links ul.active{
+        display: flex;
+    }
+
+    .search{
+        display: none;
+    }
+
+    .register{
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 300px;
+        padding-top: 20px;
+    }
+
+    .menu-toggle i{
+        display: block;
+    }
+
+    .menu-toggle2 i{
+        display: block;
+    }
+}
+
+@media (max-width: 455px){
+
+    .contenthead{
+        width: 400px;
+    }
+
+    .content{
+        width: 350px;
+    }
+
+    .uploadpdf{
+        display: flex;
+        flex-direction: column;
+    }
+}

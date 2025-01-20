@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../Assets/Images/favicon_io/favicon-16x16.png" sizes="16x16" type="image/png">
+    <link rel="icon" href="../Assets/Images/favicon_io/favicon-32x32.png" sizes="32x32" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Freeman&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/uploadnotes.css">
+    <title>Eduvate/UploadYourNotes</title>
+</head>
+<body>
+     <!-- Navbar -->
+     <div class="navbar">
+      <div class="logo">
+        <a href="../HTML/home.html"><img src="../Assets/Images/logo/Eduvatelogowithname.png"></a>
+      </div>
+
+        <div class="links">
+            <ul id="menu">
+                <li><a href="../HTML/home.html">Home</a></li>
+                <li><a href="../HTML/learn.html">Learn</a></li>
+                <li><a href="../HTML/uploadnotes.html">UploadNotes</a></li>
+                <li><a href="../HTML/help.html">Help</a></li>
+            </ul>
+        </div>
+        
+        <div class="icon">
+            <a href="#"><i class="fa-regular fa-heart"></i></a>
+            <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+
+        <div class="register">
+            <a href="" class="signin">SignIn</a>
+            <a href="" class="signup">SignUp</a>
+        </div>
+    </div>
+        <!-- main -->
+      <div class="hero">
+
+        <div class="contenthead">
+          <h1>Upload Your Notes.</h1>
+        </div>
+
+        <div class="content">
+          <form>
+            <label for="title" class="inputlabel">Title:</label><br>
+            <input type="text" name="title" class="maininput" placeholder="Enter your course name" required><br>
+
+            <label for="description" class="inputlabel">Description:</label><br>
+            <textarea id="description" class="maininput" name="description" placeholder="Write a brief description of your notes" cols="90" rows="5" required></textarea>
+
+            <!-- Dropdown for Category -->
+            <p class="Category">Category:</p>
+            <div class="dropdown" id="dropdown1">
+              <button class="dropdown-button" onclick="toggleDropdown(event, 1)">Category <i class="fa-solid fa-chevron-down"></i></button>
+              <ul class="dropdown-menu">
+                <li class="dropdown-item" onclick="selectItem(this, event, 1, 'programming')">Programming</li>
+                <li class="dropdown-item" onclick="selectItem(this, event, 1, 'designing')">Designing</li>
+                <li class="dropdown-item" onclick="selectItem(this, event, 1, 'office')">Office</li>
+                <li class="dropdown-item" onclick="selectItem(this, event, 1, 'other')">Other</li>
+              </ul>
+            </div>
+
+            <p class="Category">Upload your notes:</p>
+            <div class="uploadpdf" style="display: flex; align-items: center; gap: 10px;">
+              <input type="file" id="file-input" accept="application/pdf" style="display: none;">
+              <canvas id="pdf-preview"></canvas>
+              <button id="upload-button">Upload PDF</button>
+            </div>
+
+            <form>
+              <label for="username" class="inputlabel">Name:</label><br>
+              <input type="text" name="username" class="maininput" placeholder="Enter your Name" required><br>
+
+              <label for="username" class="inputlabel">Email:</label><br>
+              <input type="email" name="username" class="maininput" placeholder="Enter your Email" required><br>
+            </form>
+
+            <input type="submit" class="submitform">
+          </form>
+        </div> 
+        
+      </div>
+
+      <!-- Footer -->
+    <div class="social">
+      <div class="logo">
+        <a href="../HTML/home.html"><img src="../Assets/Images/logo/Eduvatelogowithname.png"></a>
+    </div>
+
+      <div class="social-icon">
+         <a href="#"><i class="fa-brands fa-facebook"></i></a>
+         <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+         <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+
+    <div class="endtxt">
+        <p>Thanks for visiting.</p>
+    </div>
+
+    <script src="../JavaScript/uploadnotes.js"></script>
+    <script src="../JavaScript/serch.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://kit.fontawesome.com/56c242ba0b.js" crossorigin="anonymous"></script>
+</body>
+</html>
