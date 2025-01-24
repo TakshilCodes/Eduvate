@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Complete Python with DSA",
+        "author": "Takshil Pandya",
+        "price": 150,
+        "img": "../Assets/Images/product/phython.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "Master Python programming from the very basics to advanced concepts, including comprehensive coverage of Data Structures and Algorithms. This course provides practical examples and hands-on coding exercises to build real-world problem-solving skills. Whether you're a beginner or an experienced programmer, this course will take your Python expertise to the next level."
+    },
+    {
+        "name": "JavaScript Basic to Advance",
+        "author": "Takshil Pandya",
+        "price": 130,
+        "img": "../Assets/Images/product/javascript.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "Learn JavaScript programming from the ground up in this step-by-step course. Cover modern JavaScript features, asynchronous programming, and DOM manipulation. This course also delves into advanced concepts like ES6 modules, closures, and event-driven programming to help you build interactive and dynamic web applications."
+    },
+    {
+        "name": "Complete Java with DSA",
+        "author": "Takshil Pandya",
+        "price": 200,
+        "img": "../Assets/Images/product/java.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "This comprehensive Java course covers everything from foundational programming concepts to advanced Data Structures and Algorithms. Explore Java's Object-Oriented Programming principles and gain expertise in designing efficient algorithms. This course is ideal for aspiring software engineers and developers preparing for technical interviews."
+    },
+    {
+        "name": "C++ Basic to Advance",
+        "author": "Takshil Pandya",
+        "price": 220,
+        "img": "../Assets/Images/product/C++.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "Dive deep into C++ programming with this in-depth course designed for all levels. Learn syntax, memory management, and advanced topics like the Standard Template Library (STL) and dynamic programming. This course is perfect for students preparing for competitive programming or technical job interviews."
+    },
+    {
+        "name": "Premiere Pro Tools 2024",
+        "author": "Takshil Pandya",
+        "price": 400,
+        "img": "../Assets/Images/product/pre.jpeg",
+        "level": "advanced",
+        "type": "course",
+        "description": "Elevate your video editing skills with Premiere Pro in this advanced course. Learn to work with color grading, audio mixing, and visual effects for professional-level video production. This course is tailored for content creators, filmmakers, and editors looking to master industry-standard tools and techniques."
+    },
+    {
+        "name": "Photoshop Tools 2024",
+        "author": "Takshil Pandya",
+        "price": 380,
+        "img": "../Assets/Images/product/photoshop.jpeg",
+        "level": "advanced",
+        "type": "course",
+        "description": "Unlock the full potential of Photoshop in this advanced course. Master tools for photo retouching, graphic design, and digital art creation. Learn to work with layers, masks, and advanced editing techniques to create stunning visual projects that stand out professionally."
+    },
+    {
+        "name": "Ultimate C# Masterclass",
+        "author": "Takshil Pandya",
+        "price": 140,
+        "img": "../Assets/Images/product/csharp.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "Become proficient in C# with this masterclass that covers everything from basic syntax to advanced frameworks. Explore topics like LINQ, asynchronous programming, and .NET Core. This course is designed for developers aiming to build scalable applications in the Microsoft ecosystem."
+    },
+    {
+        "name": "Excel from Basic to Advanced",
+        "author": "Takshil Pandya",
+        "price": 350,
+        "img": "../Assets/Images/product/excel.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "Learn to harness the power of Microsoft Excel in this comprehensive course. Cover basic spreadsheet operations, advanced formulas, and data visualization techniques. This course also includes in-depth lessons on PivotTables, Power Query, and automation with macros, making it a must-have for professionals."
+    },
+    {
+        "name": "After Effects Tools 2024",
+        "author": "Takshil Pandya",
+        "price": 480,
+        "img": "../Assets/Images/product/aftereffects.jpeg",
+        "level": "advanced",
+        "type": "course",
+        "description": "Create stunning motion graphics and visual effects with After Effects in this advanced course. Master tools for keyframing, compositing, and working with 3D layers. This course is perfect for video editors, animators, and creative professionals looking to produce cinematic-quality animations."
+    },
+    {
+        "name": "Word from Basic to Advanced",
+        "author": "Takshil Pandya",
+        "price": 480,
+        "img": "../Assets/Images/product/Word.jpeg",
+        "level": "both",
+        "type": "course",
+        "description": "Master Microsoft Word with this comprehensive course, covering everything from basic document formatting to advanced automation features. Learn to create professional reports, collaborate on projects, and utilize templates and styles effectively. A must-have skill for students and professionals alike."
+    }
+]

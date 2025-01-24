@@ -21,7 +21,7 @@
             <ul id="menu">
                 <li><a href="../HTML/home.html">Home</a></li>
                 <li><a href="../HTML/learn.html">Learn</a></li>
-                <li><a href="../HTML/uploadnotes.html">UploaNdotes</a></li>
+                <li><a href="../HTML/uploadnotes.html">Upload Notes</a></li>
                 <li><a href="../HTML/help.html">Help</a></li>
             </ul>
         </div>
@@ -43,7 +43,7 @@
     <!-- Body -->
 
     <div class="hero-head">
-        <div class="menu-toggle2" onclick="">
+        <div class="menu-toggle2">
             <i class="fa-solid fa-bars"></i>
         </div>
 
@@ -57,27 +57,27 @@
         <div class="spec">
             <!-- Dropdown for Price Range -->
             <div class="dropdown" id="dropdown1">
-               <button class="dropdown-button" onclick="toggleDropdown(event, 1)">Price Range <i class="fa-solid fa-chevron-down"></i></button>
-               <ul class="dropdown-menu">
-                   <!-- Pass the correct level ('both') and price range ('0-100') -->
-                   <li class="dropdown-item" onclick="selectItem(this, event, 1)">₹0-100</li>
-                   <li class="dropdown-item" onclick="selectItem(this, event, 1)">₹100-500</li>
-                   <li class="dropdown-item" onclick="selectItem(this, event, 1)">₹500-1000</li>
-               </ul>
-            </div>
+                <button class="dropdown-button" onclick="toggleDropdown(event, 1)">
+                  Price Range <i class="fa-solid fa-chevron-down"></i>
+                </button>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-item" onclick="selectItem(this, event, 1)">₹0-100</li>
+                  <li class="dropdown-item" onclick="selectItem(this, event, 1)">₹100-500</li>
+                  <li class="dropdown-item" onclick="selectItem(this, event, 1)">₹500-1000</li>
+                </ul>
+              </div>
 
             <!-- Dropdown for Level -->
             <div class="dropdown menu2" id="dropdown2">
                <button class="dropdown-button" onclick="toggleDropdown(event, 2)">Level <i class="fa-solid fa-chevron-down"></i></button>
                <ul class="dropdown-menu">
-                   <!-- Pass the correct level ('beginner' or 'expert') and price ('both' to show all price ranges) -->
                    <li class="dropdown-item" onclick="selectItem(this, event, 2, 'basic')">Beginner</li>
                    <li class="dropdown-item" onclick="selectItem(this, event, 2, 'advanced')">Expert</li>
                    <li class="dropdown-item" onclick="selectItem(this, event, 2, 'both')">Both</li>
                </ul>
             </div>
-  
-            <!-- Dropdown 3 -->
+
+            <!-- Dropdown for Language -->
             <div class="dropdown menu3" id="dropdown3">
                 <button class="dropdown-button" onclick="toggleDropdown(event, 3)">Language <i class="fa-solid fa-chevron-down"></i></button>
                 <ul class="dropdown-menu">
@@ -87,7 +87,7 @@
                 </ul>
             </div>
 
-            <!-- Dropdown 4 -->
+            <!-- Dropdown for Certification -->
             <div class="dropdown menu4" id="dropdown4">
                 <button class="dropdown-button" onclick="toggleDropdown(event, 4)">Get Certified <i class="fa-solid fa-chevron-down"></i></button>
                 <ul class="dropdown-menu">
@@ -99,16 +99,12 @@
         </div>
 
         <div class="products">
-            <div id="placeholder" style="display: none;">
-                <!-- Placeholder content (e.g., an image or message) -->
-            </div>
-            
+            <div id="placeholder" style="display: none;"></div>
             <div id="product-list" class="products"></div>
         </div>
     </div>
 
     <script src="../JavaScript/learn.js"></script>
-    <script src="../JavaScript/serch.js"></script>
     <script src="https://kit.fontawesome.com/56c242ba0b.js" crossorigin="anonymous"></script>
 </body>
 </html>

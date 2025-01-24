@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Details</title>
+  <link rel="stylesheet" href="../CSS/productDisplay.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+        <!-- Navbar -->
+        <div class="navbar">
+            <div class="logo">
+                <a href="../HTML/home.html"><img src="../Assets/Images/logo/Eduvatelogowithname.png"></a>
+            </div>
+    
+            <div class="links">
+                <ul id="menu">
+                    <li><a href="../HTML/home.html">Home</a></li>
+                    <li><a href="../HTML/learn.html">Learn</a></li>
+                    <li><a href="../HTML/uploadnotes.html">UploadNotes</a></li>
+                    <li><a href="../HTML/help.html">Help</a></li>
+                    <li><a href="#contact">ContactUs</a></li>
+                </ul>
+            </div>
+            
+            <div class="icon">
+                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                <div class="menu-toggle" onclick="toggleMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+    
+            <div class="register">
+                <a href="../HTML/signin.html" class="signin">SignIn</a>
+                <a href="../HTML/signup.html" class="signup">SignUp</a>
+            </div>
+        </div>
+
+  <div id="product-details" class="product-container">
+    <!-- Product details will be dynamically added here -->
+  </div>
+
+  <div class="endtxt">
+    <p>Thanks for visiting.</p>
+</div>
+
+  <script>
+
+    // Function to toggle the navigation menu
+    function toggleMenu() {
+      const links = document.querySelector(".links ul");
+      const register = document.querySelector(".register");
+    
+      if (links && register) {
+        links.classList.toggle("active");
+        register.classList.toggle("active");
+      }
+    }
+    // Step 1: Extract the "name" parameter from the query string
+    const urlParams = new URLSearchParams(window.location.search);
+    const productName = urlParams.get("name");
+
+    // Step 2: Fetch the product data from products.json
+    fetch("../Assets/Product-Details/product-details.json")
+      .then(response => response.json())
+      .then(products => {
+        // Step 3: Find the product that matches the "name" parameter
+        const product = products.find(prod => prod.name === productName);
+
+        if (product) {
+          // Step 4: Display the product details dynamically, including the description
+          document.getElementById("product-details").innerHTML = `
+            <section class="product-details">
+              <div class="product-header">
+                <h1 class="product-title">${product.name}</h1>
+              </div>
+              <div class="product-content">
+                        <div class="product-image-container">
+                  <img src="${product.img}" alt="${product.name}" class="product-image">
+                </div>
+                <div class="product-info">
+                  <p class="product-author"><strong>Author:</strong> ${product.author}</p>
+                  <p class="product-price"><strong>Price:</strong> ₹${product.price}</p>
+                  <p class="product-description"><strong>Description:</strong> ${product.description}</p>
+                  <div class="product-actions">
+                    <button class="buy-now-btn">Buy Now</button>
+                    <button class="add-to-cart-btn">Add to Cart</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+            `;
+
+
+        } else {
+          // Show an error message if the product is not found
+          document.getElementById("product-details").innerHTML = `<p>Product not found.</p>`;
+        }
+      })
+      .catch(error => {
+        // Handle errors (e.g., JSON file not found)
+        console.error("Error fetching product data:", error);
+        document.getElementById("product-details").innerHTML = `<p>Failed to load product details.</p>`;
+      });
+  </script>
+  <script src="https://kit.fontawesome.com/56c242ba0b.js" crossorigin="anonymous"></script>
+</body>
+</html>
